@@ -1,0 +1,6 @@
+"""GET SHARED PARAMETER VALUE"
+for room in rooms:
+	for param in room.Parameters:
+    	if param.IsShared and param.Definition.Name == 'Parameter 1':
+            paramValue = room.get_Parameter(param.GUID)
+        	out.append(paramValue.AsString()
